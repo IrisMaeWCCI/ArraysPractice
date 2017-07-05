@@ -123,11 +123,76 @@ namespace ArraysPractice
             Console.WriteLine(Array.LastIndexOf(bestYearsEver, 1985));
             //.Length is a property
             //Reverse Method
-            int[] palindromeNumbers = {1,2,3,4,5,5,6,7 };
+            int[] palindromeNumbers = { 1, 2, 3, 4, 5, 5, 6, 7 };
+            Console.WriteLine(palindromeNumbers[0]);
             Console.WriteLine(palindromeNumbers[0]);
             Array.Reverse(palindromeNumbers);
             Console.WriteLine(palindromeNumbers[0]);
+            Console.WriteLine(palindromeNumbers[2]);
 
+            //Sort Method-- sorts in terms of ascending order/ this will be the default for this method
+            //will sort chars and strings in alphabetical order from A-Z
+            //will sort numbers in an array from lowest to highest
+
+            string[] powerRangers = { "Green", "Yellow", "Pink", "Blue", "Red", "Black", "black" };//lowercase always takes presidence over upper case
+            Console.WriteLine(powerRangers[0]);//green
+            Array.Sort(powerRangers);
+            Console.WriteLine(powerRangers[0]); //black because it is sorting from 
+                                                // Final DO IT section in our github 
+                                                //Pracitcing First Index Of Method with Strings 
+
+            string[] arrayOfFirstNames = { "Alton", "Josefina", "Lise", "Johan", "Adibwe", "Zelda", "Franceso" };
+            Console.WriteLine(Array.IndexOf(arrayOfFirstNames, "Lise"));//this will give me two because lise although 3rd in line, is located at the index of two
+            //Pracitcing Last Index Of Method with Numbers and 
+            int[] luckyNumber = { 12, 21, 32, 12, 40, 32, 40, 32, 32, 12, 7, 7, 7 };
+            Console.WriteLine((Array.LastIndexOf(luckyNumber, 12)));
+            //Practicing Index Of with Reverse Method and Chars
+
+            char[] charPractice = { 'I', 'R', 'I', 'S', 'M', 'A', 'E', 'H', 'I', 'C', 'K', 'S' };
+            Console.WriteLine(Array.IndexOf(charPractice, "I"));
+            //Console.WriteLine(palindromeNumbers[0]);
+            Array.Reverse(charPractice);
+            Console.WriteLine(Array.IndexOf(charPractice, "I"));
+
+            string[] studentsNames = { "Harry", "Megan", "Kate", "William", "Henry", "Elizabeth" };
+            Array.Sort(studentsNames);
+            Console.WriteLine(studentsNames[0]);
+            Array.Reverse(studentsNames);
+            Console.WriteLine(studentsNames[0]);
+            Console.WriteLine((Array.LastIndexOf(studentsNames, 0)));
+            //clean up the above code...I shouldnt be getting -1s
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user1FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user2FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user3FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user4FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user5FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user6FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user7FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user8FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user9FavNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter your favorite number user 1");
+            int user10FavNumber = int.Parse(Console.ReadLine());
+
+            int[] theFavoriteNumbers = { user1FavNumber,user2FavNumber,user3FavNumber,user4FavNumber, user5FavNumber, user6FavNumber, user7FavNumber, user8FavNumber, user9FavNumber, user10FavNumber };
         }
     }
 }
