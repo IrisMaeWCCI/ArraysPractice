@@ -51,7 +51,30 @@ namespace ArraysPractice
 
             Console.WriteLine("{0},{1},{2},{3}");//take the variable at the index of zero and print it 
             Console.WriteLine("{0},{1},{2},{3}", firstLetterNames[0],firstLetterNames[1],firstLetterNames[2],firstLetterNames[3]);
+            //New Section After Commit of Severl In-CLass Practice Problems
+            int[] numberOfSeats = new int[21];
+            string[] studentsInClass = new string[21];
+            //the pattern I will follow is below
+            //nameOfArray[index] = Element;
+            Console.WriteLine("\nPlease enter in the name of the next student.");
+            studentsInClass [1] = Console.ReadLine();
 
+            //Ask user for input
+            Console.WriteLine("\nPlease enter the age of the person in the first seat.");
+
+            //Create a new int array with 21 spots and call it ageOfStudentsInClass
+            int[] ageOfStudentsInClass = new int[21];
+
+            //Assign the value of the int at the 0 index of ageOfStudentsInClass to ...
+            //... the user's input converted into an int
+            ageOfStudentsInClass[0] = int.Parse(Console.ReadLine());
+
+            //Create a new string variable and set it equal to the int at the index of 0 ...
+            //and convert it into a string
+            string firstIndex = ageOfStudentsInClass[0].ToString();
+            Console.WriteLine("\nThe age of the person in the first seat is " + ageOfStudentsInClass[0]);//arrays are immutable, they stay the same size
+            string firstIndex1 = ageOfStudentsInClass[0].ToString();
+            //lists are mutable datatypes
 
         }
     }
