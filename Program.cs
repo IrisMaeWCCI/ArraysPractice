@@ -75,7 +75,22 @@ namespace ArraysPractice
             Console.WriteLine("\nThe age of the person in the first seat is " + ageOfStudentsInClass[0]);//arrays are immutable, they stay the same size
             string firstIndex1 = ageOfStudentsInClass[0].ToString();
             //lists are mutable datatypes
+            //the user's information exists only within the console application
+            //those values in the array become null outside of the console/once the the app ends
+            //the only values that are stored are those that are hardcoded in visual studios
 
+            string[] restaurantsInMall = { "Subway", "Saki", "Dunkin' Donuts", "Red Lobster", "Chic-Fil-A" };
+            //For review 
+            char[] lettersInFirstName = { 'D', 'a', 'n', 'i', 'e', 'l'};
+            //Declare and initialize an array when when I don't know the elements, but I know how many there will be
+            //...and print the number of the char's to the Console.
+            string[] variableName = new string[42];
+
+            //To pracitce using.Length, create a char array of the letters in your middle name
+            //...and print the number of char's to the Console.
+            char[] middleName = { 'm', 'a', 'e' };
+            Console.WriteLine("\n"+middleName.Length);
+            //a property is a tool that a class can use
         }
     }
 }
