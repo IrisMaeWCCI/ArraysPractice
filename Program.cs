@@ -50,14 +50,14 @@ namespace ArraysPractice
             Console.WriteLine(firstLetterNames);
 
             Console.WriteLine("{0},{1},{2},{3}");//take the variable at the index of zero and print it 
-            Console.WriteLine("{0},{1},{2},{3}", firstLetterNames[0],firstLetterNames[1],firstLetterNames[2],firstLetterNames[3]);
+            Console.WriteLine("{0},{1},{2},{3}", firstLetterNames[0], firstLetterNames[1], firstLetterNames[2], firstLetterNames[3]);
             //New Section After Commit of Severl In-CLass Practice Problems
             int[] numberOfSeats = new int[21];
             string[] studentsInClass = new string[21];
             //the pattern I will follow is below
             //nameOfArray[index] = Element;
             Console.WriteLine("\nPlease enter in the name of the next student.");
-            studentsInClass [1] = Console.ReadLine();
+            studentsInClass[1] = Console.ReadLine();
 
             //Ask user for input
             Console.WriteLine("\nPlease enter the age of the person in the first seat.");
@@ -81,7 +81,7 @@ namespace ArraysPractice
 
             string[] restaurantsInMall = { "Subway", "Saki", "Dunkin' Donuts", "Red Lobster", "Chic-Fil-A" };
             //For review 
-            char[] lettersInFirstName = { 'D', 'a', 'n', 'i', 'e', 'l'};
+            char[] lettersInFirstName = { 'D', 'a', 'n', 'i', 'e', 'l' };
             //Declare and initialize an array when when I don't know the elements, but I know how many there will be
             //...and print the number of the char's to the Console.
             string[] variableName = new string[42];
@@ -89,8 +89,45 @@ namespace ArraysPractice
             //To pracitce using.Length, create a char array of the letters in your middle name
             //...and print the number of char's to the Console.
             char[] middleName = { 'm', 'a', 'e' };
-            Console.WriteLine("\n"+middleName.Length);
+            Console.WriteLine("\n" + middleName.Length);
             //a property is a tool that a class can use
+
+            //Declare and initialize a string array
+            //Using the Length property, print the second to last element in the array
+            string[] stringArray = { "Hello", "there", "I'm", "Willa!", "Who", "are", "you?" };
+            Console.WriteLine("The length of my array is " + (stringArray.Length - 2));
+
+
+            string[] stringArrayy = { "Hello", "there", "I'm", "Willa!", "Who", "are", "you?" };
+            Console.WriteLine("The length of my array is " + (stringArray.Length - 2));
+
+            string[] restaurantsInMalls = { "Subway", "Saki", "Dunkin' Donuts", "Red Lobster", "Chic-Fil-A" };
+            int numRestaurants = restaurantsInMall.Length;
+            Console.WriteLine(restaurantsInMalls[numRestaurants - 2]);
+            //or
+            Console.WriteLine(restaurantsInMalls[restaurantsInMalls.Length - 2]);
+            //what's happening above? restaurantsInMalls--->[5-2] (and here you subtract two because this is "Zero Indexed")
+            // restaurantsInMalls [3]
+            //Console.WriteLine(restaurantsInMalls[restaurantsInMalls.Length); This will get you a system out of range exception because it will be outside of the bounds
+            //of your array
+            //build time errors
+            //run time error these dont show up until youve run your code
+
+            //Index of is a method used to search an array for a specified value
+            //and returns the index position of the first matching value found.
+            int[] bestYearsEver = { 1985, 1999, 1991, 2000, 1985 };
+            Console.WriteLine(Array.IndexOf(bestYearsEver, 1985));
+            //there are data types and objects, and there is such a thing as being both a datatype and an object - console for ex. is an object
+            //it returns the index of the first matching value that you have asked it to find
+            //is a method used to search an array for a specified value and returns the index position of the Last matching value found.
+            Console.WriteLine(Array.LastIndexOf(bestYearsEver, 1985));
+            //.Length is a property
+            //Reverse Method
+            int[] palindromeNumbers = {1,2,3,4,5,5,6,7 };
+            Console.WriteLine(palindromeNumbers[0]);
+            Array.Reverse(palindromeNumbers);
+            Console.WriteLine(palindromeNumbers[0]);
+
         }
     }
 }
